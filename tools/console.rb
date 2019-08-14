@@ -20,6 +20,7 @@ vc3 = VentureCapitalist.new("Johnny", 10000000)
 fr1 = FundingRound.new(su1, vc1, "cash", 100)
 fr2 = FundingRound.new(su1, vc2, "check", 500)
 fr3 = FundingRound.new(su3, vc1, "credit", 300)
+fr4 = FundingRound.new(su2, vc3, "debit", 500000)
 
 
 

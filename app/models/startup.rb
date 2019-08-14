@@ -56,7 +56,11 @@ class Startup
     end
 
     def big_investors
-
+        FundingRound.all.map do |fr|
+            if fr.startup == self && VentureCapitalist.tres_commas_club.include?(fr.venture_capitalist)
+                fr.venture_capitalist
+            end
+        end.uniq.compact
     end
 end
 
